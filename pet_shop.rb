@@ -25,4 +25,33 @@ end
 #   end
 def stock_count(shop)
   total_stock = shop[:pets].length
-end 
+end
+#
+def pets_by_breed(shop, cat_breed)
+
+  specific_pets = []
+
+  for cats in shop[:pets]
+    if cats[:breed] == cat_breed
+      specific_pets << cats
+    end
+end
+
+
+   return specific_pets
+
+ end
+
+ def pets_by_breed_not_found(shop, cat_breed)
+
+
+   specific_pets = []
+
+   for cats in shop[:pets]
+     if cats[:breed] == cat_breed
+       specific_pets << cats
+       
+     end
+
+ end
+end
